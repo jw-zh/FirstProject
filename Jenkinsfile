@@ -8,7 +8,7 @@ pipeline {
     }
     stage('Run') {
       steps {
-        bat(script: 'node -version', returnStdout: true, returnStatus: true)
+        bat(script: 'node --version', returnStdout: true, returnStatus: true)
       }
     }
   }
