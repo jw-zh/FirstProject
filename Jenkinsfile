@@ -3,12 +3,12 @@ pipeline {
   stages {
     stage('Build') {
       steps {
-        bat(script: 'npm -version', returnStdout: true)
+        bat(script: 'dir', returnStdout: true)
       }
     }
     stage('Run') {
       steps {
-        bat(script: 'python test.py', returnStdout: true, returnStatus: true)
+        bat(script: 'node -version', returnStdout: true, returnStatus: true)
       }
     }
   }
